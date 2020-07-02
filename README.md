@@ -30,8 +30,8 @@ f)	Should have zero false negative detections because, we never want to miss an 
 g)	Should have small amount of false positive detections, as we do not want to act when there is no need to do so. In other words, system’s precision should be greater than 95%.   
 
 
-![LadkiBandook](https://user-images.githubusercontent.com/63171468/86398617-e6f07280-bc73-11ea-8564-561858862224.jpg)
-![LadkiBandook_yolo_out](https://user-images.githubusercontent.com/63171468/86398621-ea83f980-bc73-11ea-8ad0-b265ebc1158c.jpg)
+![LadkiBandook](https://user-images.githubusercontent.com/63171468/86398879-52d2db00-bc74-11ea-9896-e830837fbf9b.jpg)
+![LadkiBandook_yolo_out](https://user-images.githubusercontent.com/63171468/86398885-55cdcb80-bc74-11ea-8dec-2cc51ec1c22c.jpg)
 
 ### **DATA DESCRIPTION**
 
