@@ -24,11 +24,11 @@ DATA DESCRIPTION
 
 To train a neural network, make successful detections and then classify them appropriately, I needed a large imagery data set of commonly available handheld weapons. In addition to that, I also needed ground truth, in other words, we needed labelled images which clearly show a region in the image with a bounding box around the weapon. 
 
-Our dataset was downloaded from the following locations:
+The dataset was downloaded from the following locations:
 
-a)	Soft Computing and Intelligent Information Systems: We used 3000 gun images from here: https://sci2s.ugr.es/sites/default/files/files/TematicWebSites/WeaponsDetection/BasesDeDatos/WeaponS.zip
+a)	Soft Computing and Intelligent Information Systems: I used 3000 gun images from here: https://sci2s.ugr.es/sites/default/files/files/TematicWebSites/WeaponsDetection/BasesDeDatos/WeaponS.zip
 
-b)	For testing and validation, we used 608 images (out of which, 304 are gun images) from here: https://sci2s.ugr.es/sites/default/files/files/TematicWebSites/WeaponsDetection/BasesDeDatos/Test.zip
+b)	For testing and validation, I used 608 images (out of which, 304 are gun images) from here: https://sci2s.ugr.es/sites/default/files/files/TematicWebSites/WeaponsDetection/BasesDeDatos/Test.zip
 
 YOLO is implemented on DARKNET which is a C based implementation of CNNs (for REF: https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
