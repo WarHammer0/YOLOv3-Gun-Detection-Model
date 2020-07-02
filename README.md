@@ -20,7 +20,8 @@ f)	Should have zero false negative detections because, we never want to miss an 
 g)	Should have small amount of false positive detections, as we do not want to act when there is no need to do so. In other words, system’s precision should be greater than 95%.   
 
 DATA DESCRIPTION
-Source
+
+
 To train a neural network, make successful detections and then classify them appropriately, we needed a large imagery data set of commonly available handheld weapons. In addition to that, we also needed ground truth, in other words, we needed labelled images which clearly show a region in the image with a bounding box around the weapon. 
 
 Our dataset was downloaded from the following locations:
