@@ -1,5 +1,6 @@
 # YOLOv3-Gun-Detection-Model
 
+![Capture](https://user-images.githubusercontent.com/63171468/86397111-35504200-bc71-11ea-848d-e2f45e305bb6.JPG)
 
 
 
@@ -53,7 +54,7 @@ To get best of both the worlds, I used hybrid deep learning technique, a mix of 
 
 
 
-
+![Capture1](https://user-images.githubusercontent.com/63171468/86397116-384b3280-bc71-11ea-9582-c396ce51ab14.JPG)
 
 
 
