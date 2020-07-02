@@ -29,7 +29,7 @@ f)	Should have zero false negative detections because, we never want to miss an 
 
 g)	Should have small amount of false positive detections, as we do not want to act when there is no need to do so. In other words, system’s precision should be greater than 95%.   
 
-**DATA DESCRIPTION**
+### **DATA DESCRIPTION**
 
 
 To train a neural network, make successful detections and then classify them appropriately, I needed a large imagery data set of commonly available handheld weapons. In addition to that, I also needed ground truth, in other words, we needed labelled images which clearly show a region in the image with a bounding box around the weapon. 
@@ -59,7 +59,7 @@ To get best of both the worlds, I used hybrid deep learning technique, a mix of 
 
 
 
-Please refer to the **Results Folder** in this repository for a live video demonstration of the model, where live video feed from a webcam acted as an input to the model, and the gun was detected with 100% accuracy.
+Please refer to the **Results Folder** in this repository for a **live video demonstration** of the model, where live video feed from a webcam acted as an input to the model, and the gun was detected with 100% accuracy.
 
 **To get complete access to the Data and the Trained Model, Please download the Folder named, "YOLOv3GunDEtectionModel" from the following link:
 https://drive.google.com/drive/folders/142znBd5PZHXqrTWXC1WOQzyyWiLhgn5_?usp=sharing**
