@@ -35,26 +35,14 @@ To get best of both the worlds, we used hybrid deep learning technique, a mix of
 1)	We used YOLO’s C version (for faster execution) with a pretrained model which did not have “gun” as a class.
 2)	We trained the model from scratch after creating a new class called “gun” and using our image dataset meant for training as described in Section 2.2 a) above. We used Google COLAB’s PRO version for faster training using NVIDIA TESLA P100 GPGPU.
 (REF:https://medium.com/@quangnhatnguyenle/how-to-train-yolov3-on-google-colab-to-detect-custom-objects-e-g-gun-detection-d3a1ee43eda1)
-3)	We tuned the following Hyperparameters as per our requirements (Please refer here  for configuration parameters used for model training):
-	Trained model for optimal image sizes of 416X416: trade off value between faster training and accurate results
-	Optimized max batch-size for 6000 images.
-	Steps per epoch=5400
-	Class=1 (Gun)
-	Filters (filters for YOLO = (classes + 5) * 3) = 18, since our class == 1.
-	Learning Rate=0.001, optimal learning rate to balance between faster and thorough learning.
-	Momentum = 0.9, we used this value as is from YOLO recommendations.
-	For our image dataset we had Red, Green, Blue channels, so we did set Color channels per image to 3.
-	Batch size of 64, to utilize GPU and training acceleration.
-	Since we enabled Augmentation in the YOLO model for better learning using same dataset, we did play around with image saturation values and gave it a variable range of 1.5
-	For data augmentation, we did set exposure range to 1.5
-	For data augmentation purposes we did set hue between the range of 0.1.
-	For data augmentation in image resolution context, we did set random=1 for each YOLO layer.
-	For data augmentation, we did set image flip to true for horizontal and vertical axes. 
-4)	As per the guidance provided by YOLO makers here: https://github.com/AlexeyAB/darknet#when-should-i-stop-training, We stopped our model training process when we witnessed that average loss (error) was low enough (<= 0.6) and maintained its value across different batches and iterations. 
-5)	After successful training, we used NVIDIA CUDA (Compute Unified Device Architecture), cuDNN (CUDA Deep Neural Network library), OpenCV (Open Source Computer Vision) libraries to run our inference code (code to utilize the trained model for static or live gun detection on an image or webcam feed) written in Python and executed in Anaconda’s SPYDER framework. 
-6)	OpenCV (https://opencv.org/) backend was used to read/write images and video files.
+3)	As per the guidance provided by YOLO makers here: https://github.com/AlexeyAB/darknet#when-should-i-stop-training, We stopped our model training process when we witnessed that average loss (error) was low enough (<= 0.6) and maintained its value across different batches and iterations. 
+4)	After successful training, we used NVIDIA CUDA (Compute Unified Device Architecture), cuDNN (CUDA Deep Neural Network library), OpenCV (Open Source Computer Vision) libraries to run our inference code (code to utilize the trained model for static or live gun detection on an image or webcam feed) written in Python and executed in Anaconda’s SPYDER framework. 
+5)	OpenCV (https://opencv.org/) backend was used to read/write images and video files.
 
 
+To get complete access to the Data and the Trained Model, Please download the Folder named, "YOLOv3GunDEtectionModel" from the following link:
+https://drive.google.com/drive/folders/142znBd5PZHXqrTWXC1WOQzyyWiLhgn5_?usp=sharing
 
+Please go through the Project Report for complete instructions and all the software and hardware requirements.
 
 
