@@ -1,5 +1,14 @@
 # YOLOv3-Gun-Detection-Model
 
+
+
+
+
+
+
+
+
+
 My motivation is to be proactive and address the open issues faced during an aftermath of a shootout. I conceptualize a shootout countermeasure system which detects handheld weapons before the shooter tries to use them. My design will leverage on the current infrastructure e.g. surveillance cameras, web cams etc. which are already deployed and are situated in the public places like schools, restaurants, and other public buildings. Detection and location of a handheld weapon will be based on object detection and classification using image/video feeds (using a visible camera or an infrared one). My current implementation relies heavily on visible imagery, but a similar approach could be used for short or long wave infrared camera systems for detecting concealed weapons. Since time between weapon detection and taking an action is of quintessential importance for an effective countermeasure plan, the system requirements need to have a near real time detection methodology.
 
 
@@ -40,6 +49,16 @@ To get best of both the worlds, I used hybrid deep learning technique, a mix of 
 4)	After successful training, I used NVIDIA CUDA (Compute Unified Device Architecture), cuDNN (CUDA Deep Neural Network library), OpenCV (Open Source Computer Vision) libraries to run our inference code (code to utilize the trained model for static or live gun detection on an image or webcam feed) written in Python and executed in Anaconda’s SPYDER framework. 
 5)	OpenCV (https://opencv.org/) backend was used to read/write images and video files.
 
+
+
+
+
+
+
+
+
+
+Please refer to the results folder for a live video demonstration of the model, where live video feed from a webcam acted as an input to the model, and the gun was detected with 100% accuracy.
 
 To get complete access to the Data and the Trained Model, Please download the Folder named, "YOLOv3GunDEtectionModel" from the following link:
 https://drive.google.com/drive/folders/142znBd5PZHXqrTWXC1WOQzyyWiLhgn5_?usp=sharing
